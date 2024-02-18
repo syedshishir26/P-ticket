@@ -10,18 +10,369 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3976eee170.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Buy Bus Tickets Online</title>
     <style>
-        main{
+        main {
             font-family: "Raleway", sans-serif;
         }
     </style>
 </head>
+
 <body>
     <main>
+        <!-- navbar section -->
+        <nav class="mx-4 lg:mx-32 mt-5">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-gray-900 text-white rounded-box">
+                            <li>Home</li>
+                            <li>About</li>
+                            <li>Destination</li>
+                            <li>Search</li>
+                        </ul>
+                    </div>
+                    <a class=" text-xl lg:text-4xl font-extrabold">P-ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li class="mx-2"><a href="">Home</a></li>
+                        <li class="mx-2"><a href="">About</a></li>
+                        <li class="mx-2"><a href="">Destination</a></li>
+                        <li class="mx-2"><a href="">Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <button
+                        class="bg-[#1DD1001A] border rounded-xl gap-2  border-[#1DD100] text-[#1DD100] text-2xl font-bold flex px-4 py-2 justify-center items-center">Bus
+                        <img src="images/bus-icon.png" alt=""></button>
+                </div>
+            </div>
+        </nav>
+        <!-- banner section -->
+        <section class="mx-4 lg:mx-32 my-10">
+            <div class="hero px-5 lx:px-20 py-10 lg:py-40  rounded-2xl flex flex-col gap-10 relative"
+                style="background-image: url(images/banner.png);">
+                <!-- <div class="hero-overlay bg-opacity-60"></div> -->
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="text-white">
+                        <h1 class="mb-5 text-3xl lg:text-7xl font-extrabold">End-to-End Travel with </h1>
+                        <h1 class="text-[#1DD100] mb-5 text text-3xl lg:text-7xl font-extrabold">P Paribahan</h1>
+                        <p class="mb-10 text-lg">Connecting communities with seamless journeys, our bus company is
+                            dedicated to reliable transportation, <br> ensuring passengers reach their destinations
+                            comfortably and on time.</p>
+                        <button class="bg-[#1DD100] p-5 rounded-xl text-black text-xl font-bold mb-20"><a
+                                href="#buyTicket">Buy
+                                ticket</a></button>
+                    </div>
+                </div>
+                <div class="lg:absolute lg:-bottom-10 flex flex-col lg:flex-row gap-10">
+                    <div
+                        class="bg-white text-black border-b-4 border-[#1DD100] flex justify-center items-center gap-5 py-3 px-10 rounded-xl">
+                        <img src="images/people.png" alt="">
+                        <div class="flex flex-col gap-4">
+                            <h1 class="text-3xl lg:text-5xl font-extrabold">500k+</h1>
+                            <h1 class="">Registerd users</h1>
+                        </div>
 
+                    </div>
+                    <div
+                        class="bg-white text-black border-b-4 border-[#1DD100] flex justify-center items-center gap-5 py-3 px-10 rounded-xl">
+                        <img src="images/ticket-cupon.png" alt="">
+                        <div class="flex flex-col gap-4">
+                            <h1 class="text-3xl lg:text-5xl font-extrabold">500k+</h1>
+                            <h1 class="">Registerd users</h1>
+                        </div>
+
+                    </div>
+                    <div
+                        class="bg-white text-black border-b-4 border-[#1DD100] flex justify-center items-center gap-5 py-3 px-10 rounded-xl">
+                        <img src="images/stoppage.png" alt="">
+                        <div class="flex flex-col gap-4">
+                            <h1 class="text-3xl lg:text-5xl font-extrabold">500k+</h1>
+                            <h1 class="">Registerd users</h1>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- cupon section -->
+        <section class="mx-4  lg:mx-32 mt-52 text-black flex flex-col justify-center items-center">
+            <h2 class="font-extrabold text-3xl lg:text-5xl">Best offers for you</h2>
+            <div class="flex justify-between w-full mt-20 flex-col lg:flex-row gap-5">
+                <div class="bg-[#FFBF0F] rounded-3xl text-black flex justify-center items-center ">
+                    <div class="py-1 lg:py-4 px-3 lg:px-12">
+                        <h1 class="text-3xl lg:text-5xl font-extrabold opacity-80">15% off</h1>
+                        <h1 class="text-2xl">On your next purchase</h1>
+                        <h1 class="opacity-50">Use by January 2024</h1>
+                    </div>
+                    <img src="images/cupon-devider.png" class="min-h-full">
+                    <div class="p-1 lg:p-4">
+                        <h1 class="text-sm lg:text-4xl font-bold">NEW15</h1>
+                        <h1 class="opacity-50 ">Coupon Code</h1>
+                    </div>
+                </div>
+                <div class="bg-[#F78C9C] rounded-3xl text-black flex justify-center items-center ">
+                    <div class="py-1 lg:py-4 px-3 lg:px-12">
+                        <h1 class="text-3xl lg:text-5xl font-extrabold opacity-80">20% off</h1>
+                        <h1 class="text-2xl">On your next purchase</h1>
+                        <h1 class="opacity-50">Use by January 2024</h1>
+                    </div>
+                    <img src="images/cupon-devider.png" class="min-h-full">
+                    <div class="p-1 lg:p-4">
+                        <h1 class="text-sm lg:text-4xl font-bold">Couple 20</h1>
+                        <h1 class="opacity-50">Coupon Code</h1>
+                    </div>
+                </div>
+            </div>
+            <button
+                class="text-[#1DD100] border-[#1DD100] border rounded-xl bg-[#1DD1001A] text-2xl font-semibold p-5 mt-28">See
+                all offers</button>
+        </section>
+        <!-- buy ticket section -->
+        <section id="buyTicket"
+            class="rounded-t-[88px] border-t-2 border-[#1DD100] mt-28 bg-[#F7F8F8] pt-12 pb-12 text-black flex flex-col gap-10 justify-center items-center text-center hiden">
+            <h2 class="font-extrabold text-3xl lg:text-5xl">P.H Paribahan</h2>
+            <p>Connecting communities with seamless journeys, our bus company is dedicated to reliable transportation,
+                <br> ensuring passengers reach their destinations comfortably and on time.
+            </p>
+            <div>
+                <div
+                    class="bg-white rounded-xl lg:px-5 flex flex-col lg:flex-row justify-center items-center gap-5 mx-40">
+                    <!-- left side -->
+                    <div class="flex gap-5 flex-col">
+                        <div class="flex flex-col lg:flex-row gap-5 justify-between items-center p-1">
+                            <div class="flex gap-5 justify-between items-center">
+                                <img src="images/bus-logo.png" alt="">
+                                <div class="text-xs lg:text-lg">
+                                    <h1>Greenline Paribahan</h1>
+                                    <p>Coach-009-WEB ! AC_Business</p>
+                                </div>
+                            </div>
+                            <div class="">
+                                <button
+                                    class="text-[#1DD100] rounded-xl bg-[#1DD1001A] text-xl font-semibold px-2 py-4 flex justify-center items-center gap-2">
+                                    <img src="images/seat-green.png" alt=""><span id="seatLefts">40</span> seats left
+                                </button>
+                            </div>
+                        </div>
+                        <div class="bg-[#F7F8F8] rounded-xl p-5 text-[#030712] text-opacity-50 font-bold">
+                            <div
+                                class="border-b-2 border-dashed border-[#030712] py-3 border-opacity-10 flex justify-between items-center ">
+                                <p>Route</p>
+                                <p class="text-black">Dhaka-Sylhet</p>
+                            </div>
+                            <div
+                                class="border-b-2 border-dashed border-[#030712] py-3 border-opacity-10 flex justify-between items-center ">
+                                <p>Departure Time</p>
+                                <p class="text-black">09:00pm</p>
+                            </div>
+                            <div class="py-3 flex gap-5 justify-around  items-center">
+                                <div class="bg-[#030712] bg-opacity-10 rounded-xl p-1 lg:p-3">Borading Point - Laxmipur
+                                </div>
+                                <div class="bg-[#030712] bg-opacity-10 rounded-xl p-1 lg:p-3">Dropping Point - Bogura
+                                </div>
+                                <div class="bg-[#030712] bg-opacity-10 rounded-xl p-1 lg:p-3">Est. Time - 11 Hour</div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/info-devider.png" class="min-h-full hidden lg:block" alt="">
+                    <!-- right side  -->
+                    <div class="text-[#030712] text-opacity-50 font-bold">
+                        <img src="images/fare.png" alt="">
+                        <h2 class="text-black text-3xl">550 Taka</h2>
+                        <p>Per Seat</p>
+                    </div>
+                </div>
+                <!-- select your seat section -->
+                <div
+                    class="bg-white rounded-xl lg:px-5 flex flex-col lg:flex-row justify-center items-center gap-5 mx-5 lg:mx-20 my-10 p-5 ">
+                    <!-- left side -->
+                    <div class="p-5 lg:border-r-2 border-dashed border-[#030712] border-opacity-10 lg:w-full ">
+                        <div class="mb-5 border-b-2 border-dashed border-[#030712] border-opacity-10 py-3 ">
+                            <h1 class=" text-xl lg:text-3xl font-semibold">Select Your Seat</h1>
+                        </div>
+                        <div
+                            class="mb-5 border-b-2 border-dashed border-[#030712] py-3 border-opacity-10 flex justify-between">
+                            <div class=" flex justify-center items-center gap-2">
+                                <img src="images/seat-gray.png" alt="">
+                                <p>Available</p>
+                                </img>
+                            </div>
+                            <div class="flex justify-center items-center gap-2">
+                                <img src="images/seat-green-filled.png" alt="">
+                                <p>Selected </p>
+                                </img>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2 font-bold">
+                            <div class="flex justify-end ">
+                                <div class="bg-[#030712] bg-opacity-10 p-2 rounded-xl">
+                                    <img src="images/Vector.png" alt="">
+                                </div>
+                            </div>
+                            <div class="a grid grid-cols-5 gap-2 ">
+                                <div class="flex justify-center items-center">A</div>
+                                <div id="A1" class="px-3 py-1 bg-[#030712] bg-opacity-10 p-2 rounded-xl seat">A1</div>
+                                <div id="A2" class="px-3 py-1 bg-[#030712] bg-opacity-10 p-2 rounded-xl seat">A2</div>
+                                <div id="A3" class="px-3 py-1 bg-[#030712] bg-opacity-10 p-2 rounded-xl seat">A3</div>
+                                <div id="A4" class="px-3 py-1 bg-[#030712] bg-opacity-10 p-2 rounded-xl seat">A4</div>
+                            </div>
+
+                            <div class="a grid grid-cols-5 gap-2 ">
+                                <div class="flex justify-center items-center">B</div>
+                                <div id="B1" class="px-3 py-1 bg-[#030712] bg-opacity-10 p-2 rounded-xl seat">B1</div>
+                                <div id="B2" class="px-3 py-1 bg-[#030712] bg-opacity-10 p-2 rounded-xl seat">B2</div>
+                                <div id="B3" class="px-3 py-1 bg-[#030712] bg-opacity-10 p-2 rounded-xl seat">B3</div>
+                                <div id="B4" class="px-3 py-1 bg-[#030712] bg-opacity-10 p-2 rounded-xl seat">B4</div>
+                            </div>
+                            <div class="c grid grid-cols-5 gap-2 ">
+                                <div class="flex justify-center items-center">C</div>
+                                <div id="C1" class="px-3 py-1 bg-[#030712] bg-opacity-10 p-2 rounded-xl seat">C1</div>
+                                <div id="C2" class="px-3 py-1 bg-[#030712] bg-opacity-10 p-2 rounded-xl seat">C2</div>
+                                <div id="C3" class="px-3 py-1 bg-[#030712] bg-opacity-10 p-2 rounded-xl seat">C3</div>
+                                <div id="C4" class="px-3 py-1 bg-[#030712] bg-opacity-10 p-2 rounded-xl seat">C4</div>
+                            </div>
+                            <div class="d grid grid-cols-5 gap-2 ">
+                                <div class="flex justify-center items-center">D</div>
+                                <div id="D1" class="px-3 py-1 bg-[#030712] bg-opacity-10 p-2 rounded-xl seat">D1</div>
+                                <div id="D2" class="px-3 py-1 bg-[#030712] bg-opacity-10 p-2 rounded-xl seat">D2</div>
+                                <div id="D3" class="px-3 py-1 bg-[#030712] bg-opacity-10 p-2 rounded-xl seat">D3</div>
+                                <div id="D4" class="px-3 py-1 bg-[#030712] bg-opacity-10 p-2 rounded-xl seat">D4</div>
+                            </div>
+                            <div class="e grid grid-cols-5 gap-2 ">
+                                <div class="flex justify-center items-center">E</div>
+                                <div id="E1" class="px-3 py-1 bg-[#030712] bg-opacity-10 p-2 rounded-xl seat">E1</div>
+                                <div id="E2" class="px-3 py-1 bg-[#030712] bg-opacity-10 p-2 rounded-xl seat">E2</div>
+                                <div id="E3" class="px-3 py-1 bg-[#030712] bg-opacity-10 p-2 rounded-xl seat">E3</div>
+                                <div id="E4" class="px-3 py-1 bg-[#030712] bg-opacity-10 p-2 rounded-xl seat">E4</div>
+                            </div>
+
+                            <div class="f grid grid-cols-5 gap-2 ">
+                                <div class="flex justify-center items-center">F</div>
+                                <div id="F1" class="px-3 py-1 bg-[#030712] bg-opacity-10 p-2 rounded-xl seat">F1</div>
+                                <div id="F2" class="px-3 py-1 bg-[#030712] bg-opacity-10 p-2 rounded-xl seat">F2</div>
+                                <div id="F3" class="px-3 py-1 bg-[#030712] bg-opacity-10 p-2 rounded-xl seat">F3</div>
+                                <div id="F4" class="px-3 py-1 bg-[#030712] bg-opacity-10 p-2 rounded-xl seat">F4</div>
+                            </div>
+                            <div class="g grid grid-cols-5 gap-2 ">
+                                <div class="flex justify-center items-center">G</div>
+                                <div id="G1" class="px-3 py-1 bg-[#030712] bg-opacity-10 p-2 rounded-xl seat">G1</div>
+                                <div id="G2" class="px-3 py-1 bg-[#030712] bg-opacity-10 p-2 rounded-xl seat">G2</div>
+                                <div id="G3" class="px-3 py-1 bg-[#030712] bg-opacity-10 p-2 rounded-xl seat">G3</div>
+                                <div id="G4" class="px-3 py-1 bg-[#030712] bg-opacity-10 p-2 rounded-xl seat">G4</div>
+                            </div>
+                            <div class="h grid grid-cols-5 gap-2 ">
+                                <div class="flex justify-center items-center">H</div>
+                                <div id="H1" class="px-3 py-1 bg-[#030712] bg-opacity-10 p-2 rounded-xl seat">H1</div>
+                                <div id="H2" class="px-3 py-1 bg-[#030712] bg-opacity-10 p-2 rounded-xl seat">H2</div>
+                                <div id="H3" class="px-3 py-1 bg-[#030712] bg-opacity-10 p-2 rounded-xl seat">H3</div>
+                                <div id="H4" class="px-3 py-1 bg-[#030712] bg-opacity-10 p-2 rounded-xl seat">H4</div>
+                            </div>
+                            <div class="i grid grid-cols-5 gap-2 ">
+                                <div class="flex justify-center items-center">I</div>
+                                <div id="I1" class="px-3 py-1 bg-[#030712] bg-opacity-10 p-2 rounded-xl seat">I1</div>
+                                <div id="I2" class="px-3 py-1 bg-[#030712] bg-opacity-10 p-2 rounded-xl seat">I2</div>
+                                <div id="I3" class="px-3 py-1 bg-[#030712] bg-opacity-10 p-2 rounded-xl seat">I3</div>
+                                <div id="I4" class="px-3 py-1 bg-[#030712] bg-opacity-10 p-2 rounded-xl seat">I4</div>
+                            </div>
+                            <div class="j grid grid-cols-5 gap-2 ">
+                                <div class="flex justify-center items-center">J</div>
+                                <div id="J1" class="px-3 py-1 bg-[#030712] bg-opacity-10 p-2 rounded-xl seat">J1</div>
+                                <div id="J2" class="px-3 py-1 bg-[#030712] bg-opacity-10 p-2 rounded-xl seat">J2</div>
+                                <div id="J3" class="px-3 py-1 bg-[#030712] bg-opacity-10 p-2 rounded-xl seat">J3</div>
+                                <div id="J4" class="px-3 py-1 bg-[#030712] bg-opacity-10 p-2 rounded-xl seat">J4</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- right side -->
+                    <div class="lg:w-full ">
+                        <div class="mb-5 border-b-2 border-dashed border-[#030712] border-opacity-10 py-3 ">
+                            <h1 class=" text-xl lg:text-3xl font-semibold">Select Your Seat</h1>
+                        </div>
+                        <div class="bg-[#F7F8F8] rounded-xl p-5 text-[#030712] text-opacity-50 font-bold text-sm">
+                            <div id="apendBookedSeats">
+                                <div
+                                    class="mb-5 border-b-2 border-dashed border-[#030712] border-opacity-10 py-3 flex justify-between">
+                                    <h1 class=" text-xs lg:text-base font-semibold text-black">Seat <sup
+                                            class="bg-[#1DD100] rounded-lg px-2 text-white" id="seatBooked">0</sup></h1>
+                                    <h1 class=" text-xs lg:text-base font-semibold text-black">Class</h1>
+                                    <h1 class=" text-xs lg:text-base font-semibold text-black">Price</h1>
+                                </div>
+                                <div id="newSeats" class="flex justify-between items-center ">
+                                    
+                                </div>
+                            </div>
+                            <!-- total section -->
+                            <div class="mt-4 border-t-2 text-black border-[#030712] border-opacity-10">
+                                <div class=" mt-4 flex justify-between items-center">
+                                    <h1>Total Price: </h1>
+                                    <h1>BDT <span class="">0</span></h1>
+                                </div>
+                                <div class="mt-2 rounded-xl bg-white p-2 flex">
+                                    <input type="text" class="w-full focus:outline-none px-3"
+                                        placeholder="Have any coupon?">
+                                    <button class="text-white bg-[#1DD100] px-3 py-1 rounded-xl">Apply</button>
+                                </div>
+                                <div class=" mt-2 flex justify-between items-center">
+                                    <h1>Grand Total: </h1>
+                                    <h1>BDT <span class="">0</span></h1>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- customer info -->
+
+                        <form action="" class=" mt-3 flex flex-col gap-3 text-xl text-black text-start font-semibold">
+
+                            <h1>Passenger Name*</h1>
+                            <input type="text" class="w-full border rounded-xl p-3" required>
+                            <h1>Phone Number*</h1>
+                            <input type="number" class="w-full border rounded-xl p-3" required>
+                            <h1>Email ID*</h1>
+                            <input type="email" class="w-full border rounded-xl p-3" required>
+                            <button class="w-full border rounded-xl p-3 bg-[#1DD100] text-white" type="submit"
+                                disabled>Next</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <footer class="w-full bg-[#030712] p-5 lg:p-20 text-white">
+            <div class="flex justify-between pb-10 border-b-2 border-dashed border-white border-opacity-40">
+                <div>
+                    <h1 class="font-extrabold text-4xl">P-Ticket</h1>
+                    <h1 class="mt-5 ">P-Ticket is a digital platform to make your <br> daily commuting better.</h1>
+                </div>
+                <div>
+                    <h1 class="mb-5 textsm">Download our App</h1>
+                    <div class="rounded-xl border-white border p-2 bg-black flex gap-2 justify-center items-center">
+                        <img src="images/playstore.png" alt="">
+                        <p>Get it on <br> <span class="text-xl font-bold">Google Play</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-between mt-10">
+                <h2 class="textsm opacity-50">@all rights reserved, P-Ticket services limited.2024</h2>
+                <div class="flex gap-5"> <a href="">Terms & condition</a><a href="">Return & refund policy</a><a
+                        href="">Privacy policy</a></div>
+            </div>
+
+        </footer>
     </main>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
