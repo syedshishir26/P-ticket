@@ -304,14 +304,15 @@
                         </div>
                         <div class="bg-[#F7F8F8] rounded-xl p-5 text-[#030712] text-opacity-50 font-bold text-sm">
                             <div id="apendBookedSeats">
-                                <div class="mb-5 border-b-2 border-dashed border-[#030712] border-opacity-10 py-3 grid grid-cols-3">
+                                <div
+                                    class="mb-5 border-b-2 border-dashed border-[#030712] border-opacity-10 py-3 grid grid-cols-3">
                                     <h1 class=" text-xs lg:text-base font-semibold text-black">Seat <sup
                                             class="bg-[#1DD100] rounded-lg px-2 text-white" id="seatBooked">0</sup></h1>
                                     <h1 class=" text-xs lg:text-base font-semibold text-black">Class</h1>
                                     <h1 class=" text-xs lg:text-base font-semibold text-black">Price</h1>
                                 </div>
                                 <div id="newSeats" class="grid grid-cols-3">
-                                    
+
                                 </div>
                             </div>
                             <!-- total section -->
@@ -320,11 +321,14 @@
                                     <h1>Total Price: </h1>
                                     <h1>BDT <span class="" id="totalPrice">0</span></h1>
                                 </div>
-                                <div class="mt-2 rounded-xl bg-white p-2 flex">
-                                    <input type="text" class="w-full focus:outline-none px-3"
+                                <div id="couponDiv" class="mt-2 rounded-xl bg-white p-2 flex">
+                                    <input type="text" id="cuponCode" class="w-full focus:outline-none px-3"
                                         placeholder="Have any coupon?">
-                                    <button class="text-white bg-[#1DD100] px-3 py-1 rounded-xl">Apply</button>
+                                    <button class="text-white bg-[#1DD100] px-3 py-1 rounded-xl"
+                                        id="cupon">Apply</button>
                                 </div>
+                                <h2 class="text-sm text-red-500 text-start hidden" id="cpnalt">***Please provide a valid
+                                    code***</h2>
                                 <div class=" mt-2 flex justify-between items-center">
                                     <h1>Grand Total: </h1>
                                     <h1>BDT <span class="" id="grandTotal">0</span></h1>
@@ -338,11 +342,11 @@
                             <h1>Passenger Name*</h1>
                             <input type="text" class="w-full border rounded-xl p-3" required>
                             <h1>Phone Number*</h1>
-                            <input type="number" class="w-full border rounded-xl p-3" required>
+                            <input type="text" id="phNumber" class="w-full border rounded-xl p-3" required>
                             <h1>Email ID*</h1>
-                            <input type="email" class="w-full border rounded-xl p-3" required>
-                            <button class="w-full border rounded-xl p-3 bg-[#1DD100] text-white" type="submit"
-                                disabled>Next</button>
+                            <input id="email" type="email" class="w-full border rounded-xl p-3" required>
+                            <button id="nextButton" class="w-full border rounded-xl p-3 bg-[#1DD100] bg-opacity-20 text-white" type="submit"
+                            disabled>Next</button>
                         </form>
                     </div>
                 </div>
