@@ -304,14 +304,13 @@
                         </div>
                         <div class="bg-[#F7F8F8] rounded-xl p-5 text-[#030712] text-opacity-50 font-bold text-sm">
                             <div id="apendBookedSeats">
-                                <div
-                                    class="mb-5 border-b-2 border-dashed border-[#030712] border-opacity-10 py-3 flex justify-between">
+                                <div class="mb-5 border-b-2 border-dashed border-[#030712] border-opacity-10 py-3 grid grid-cols-3">
                                     <h1 class=" text-xs lg:text-base font-semibold text-black">Seat <sup
                                             class="bg-[#1DD100] rounded-lg px-2 text-white" id="seatBooked">0</sup></h1>
                                     <h1 class=" text-xs lg:text-base font-semibold text-black">Class</h1>
                                     <h1 class=" text-xs lg:text-base font-semibold text-black">Price</h1>
                                 </div>
-                                <div id="newSeats" class="flex justify-between items-center ">
+                                <div id="newSeats" class="grid grid-cols-3">
                                     
                                 </div>
                             </div>
@@ -319,7 +318,7 @@
                             <div class="mt-4 border-t-2 text-black border-[#030712] border-opacity-10">
                                 <div class=" mt-4 flex justify-between items-center">
                                     <h1>Total Price: </h1>
-                                    <h1>BDT <span class="">0</span></h1>
+                                    <h1>BDT <span class="" id="totalPrice">0</span></h1>
                                 </div>
                                 <div class="mt-2 rounded-xl bg-white p-2 flex">
                                     <input type="text" class="w-full focus:outline-none px-3"
@@ -328,7 +327,7 @@
                                 </div>
                                 <div class=" mt-2 flex justify-between items-center">
                                     <h1>Grand Total: </h1>
-                                    <h1>BDT <span class="">0</span></h1>
+                                    <h1>BDT <span class="" id="grandTotal">0</span></h1>
                                 </div>
                             </div>
                         </div>
