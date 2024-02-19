@@ -27,10 +27,10 @@ for (let i of seat) {
                 seatName.classList.add('seatName', (i.innerText).toLowerCase())
                 seatName.innerText = i.innerText;
                 let className = document.createElement('p');
-                className.classList.add('seatClass',(i.innerText).toLowerCase())
+                className.classList.add('seatClass', (i.innerText).toLowerCase())
                 className.innerText = 'Economy';
                 let pricePerSeat = document.createElement('p');
-                pricePerSeat.classList.add('seatPrice',(i.innerText).toLowerCase())
+                pricePerSeat.classList.add('seatPrice', (i.innerText).toLowerCase())
                 pricePerSeat.innerText = 550;
 
                 // appending new booked seat
@@ -43,10 +43,11 @@ for (let i of seat) {
                 // document.getElementById('grandTotal').innerText = newPrice;
 
                 // eneble next button
+
+
                 const nextBtn = document.getElementById('nextButton');
                 nextBtn.classList.remove('bg-opacity-20');
-                nextBtn.removeAttribute('disabled');
-            
+
             }
 
 
@@ -57,8 +58,8 @@ for (let i of seat) {
             i.classList.remove('text-white');
             i.classList.add('bg-opacity-10');
 
-            
-            arr.splice(arr.indexOf(i.innerText),1)
+
+            arr.splice(arr.indexOf(i.innerText), 1)
 
             // change rest seat numbers
             let seatLefts = parseInt(document.getElementById('seatLefts').innerText);
@@ -71,18 +72,18 @@ for (let i of seat) {
             document.getElementById('seatBooked').innerText = seatBookedAfterSelect;
 
             // changing total price
-            document.getElementById('totalPrice').innerText = parseInt(document.getElementById('totalPrice').innerText)-550;
-            
-            
-            
+            document.getElementById('totalPrice').innerText = parseInt(document.getElementById('totalPrice').innerText) - 550;
+
+
+
             // pop seat
-            let newSeat =document.getElementsByClassName((i.innerText).toLowerCase());
-            for(let j of newSeat){
+            let newSeat = document.getElementsByClassName((i.innerText).toLowerCase());
+            for (let j of newSeat) {
                 j.classList.add('hidden')
             }
         }
         document.getElementById('grandTotal').innerText = parseInt(document.getElementById('totalPrice').innerText)
-        
+
     }
     )
 }
@@ -106,5 +107,19 @@ document.getElementById('cupon').addEventListener('click', function () {
     else {
         document.getElementById('cpnalt').classList.remove('hidden')
         document.getElementById('cuponCode').value = '';
+    }
+})
+
+
+document.getElementById('nextButton').addEventListener('click', function () {
+
+    let number = parseInt(document.getElementById('phNumber').value)
+    let gt = parseInt(document.getElementById('grandTotal').innerText)
+    if (!isNaN(number) && gt !=0) {
+        console.log(number)
+        my_modal_1.showModal()
+    }
+    else{
+        document.getElementById('validNum').classList.remove('hidden')
     }
 })
